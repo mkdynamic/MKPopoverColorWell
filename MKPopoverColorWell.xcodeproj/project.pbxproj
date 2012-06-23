@@ -1,0 +1,325 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4DDCC1A91595965600F2CEC7 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DDCC1A81595965600F2CEC7 /* Cocoa.framework */; };
+		4DDCC1B31595965600F2CEC7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4DDCC1B11595965600F2CEC7 /* InfoPlist.strings */; };
+		4DDCC1B51595965600F2CEC7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DDCC1B41595965600F2CEC7 /* main.m */; };
+		4DDCC1B91595965600F2CEC7 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 4DDCC1B71595965600F2CEC7 /* Credits.rtf */; };
+		4DDCC1BC1595965600F2CEC7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DDCC1BB1595965600F2CEC7 /* AppDelegate.m */; };
+		4DDCC1BF1595965600F2CEC7 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DDCC1BD1595965600F2CEC7 /* MainMenu.xib */; };
+		4DDCC1C3159596B300F2CEC7 /* MKColorPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DDCC195159595C900F2CEC7 /* MKColorPickerView.m */; };
+		4DDCC1C4159596B300F2CEC7 /* MKColorSwatchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DDCC197159595C900F2CEC7 /* MKColorSwatchCell.m */; };
+		4DDCC1C5159596B300F2CEC7 /* MKColorSwatchMatrix.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DDCC199159595C900F2CEC7 /* MKColorSwatchMatrix.m */; };
+		4DDCC1C6159596B300F2CEC7 /* MKColorWell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DDCC19B159595C900F2CEC7 /* MKColorWell.m */; };
+		4DDCC1C9159597C800F2CEC7 /* MKColorWell+Bindings.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DDCC1C8159597C800F2CEC7 /* MKColorWell+Bindings.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4DDCC194159595C900F2CEC7 /* MKColorPickerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MKColorPickerView.h; sourceTree = "<group>"; };
+		4DDCC195159595C900F2CEC7 /* MKColorPickerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MKColorPickerView.m; sourceTree = "<group>"; };
+		4DDCC196159595C900F2CEC7 /* MKColorSwatchCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MKColorSwatchCell.h; sourceTree = "<group>"; };
+		4DDCC197159595C900F2CEC7 /* MKColorSwatchCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MKColorSwatchCell.m; sourceTree = "<group>"; };
+		4DDCC198159595C900F2CEC7 /* MKColorSwatchMatrix.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MKColorSwatchMatrix.h; sourceTree = "<group>"; };
+		4DDCC199159595C900F2CEC7 /* MKColorSwatchMatrix.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MKColorSwatchMatrix.m; sourceTree = "<group>"; };
+		4DDCC19A159595C900F2CEC7 /* MKColorWell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MKColorWell.h; sourceTree = "<group>"; };
+		4DDCC19B159595C900F2CEC7 /* MKColorWell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MKColorWell.m; sourceTree = "<group>"; };
+		4DDCC1A41595965600F2CEC7 /* MKPopoverColorWellExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MKPopoverColorWellExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DDCC1A81595965600F2CEC7 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		4DDCC1AB1595965600F2CEC7 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		4DDCC1AC1595965600F2CEC7 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		4DDCC1AD1595965600F2CEC7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4DDCC1B01595965600F2CEC7 /* MKPopoverColorWellExample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MKPopoverColorWellExample-Info.plist"; sourceTree = "<group>"; };
+		4DDCC1B21595965600F2CEC7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4DDCC1B41595965600F2CEC7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4DDCC1B61595965600F2CEC7 /* MKPopoverColorWellExample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MKPopoverColorWellExample-Prefix.pch"; sourceTree = "<group>"; };
+		4DDCC1B81595965600F2CEC7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		4DDCC1BA1595965600F2CEC7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4DDCC1BB1595965600F2CEC7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4DDCC1BE1595965600F2CEC7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		4DDCC1C7159597C800F2CEC7 /* MKColorWell+Bindings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MKColorWell+Bindings.h"; sourceTree = "<group>"; };
+		4DDCC1C8159597C800F2CEC7 /* MKColorWell+Bindings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MKColorWell+Bindings.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4DDCC1A11595965600F2CEC7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DDCC1A91595965600F2CEC7 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4DDCC18B1595953800F2CEC7 = {
+			isa = PBXGroup;
+			children = (
+				4DDCC1C7159597C800F2CEC7 /* MKColorWell+Bindings.h */,
+				4DDCC1C8159597C800F2CEC7 /* MKColorWell+Bindings.m */,
+				4DDCC194159595C900F2CEC7 /* MKColorPickerView.h */,
+				4DDCC195159595C900F2CEC7 /* MKColorPickerView.m */,
+				4DDCC196159595C900F2CEC7 /* MKColorSwatchCell.h */,
+				4DDCC197159595C900F2CEC7 /* MKColorSwatchCell.m */,
+				4DDCC198159595C900F2CEC7 /* MKColorSwatchMatrix.h */,
+				4DDCC199159595C900F2CEC7 /* MKColorSwatchMatrix.m */,
+				4DDCC19A159595C900F2CEC7 /* MKColorWell.h */,
+				4DDCC19B159595C900F2CEC7 /* MKColorWell.m */,
+				4DDCC1AE1595965600F2CEC7 /* MKPopoverColorWellExample */,
+				4DDCC1A71595965600F2CEC7 /* Frameworks */,
+				4DDCC1A51595965600F2CEC7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4DDCC1A51595965600F2CEC7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4DDCC1A41595965600F2CEC7 /* MKPopoverColorWellExample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4DDCC1A71595965600F2CEC7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4DDCC1A81595965600F2CEC7 /* Cocoa.framework */,
+				4DDCC1AA1595965600F2CEC7 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4DDCC1AA1595965600F2CEC7 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4DDCC1AB1595965600F2CEC7 /* AppKit.framework */,
+				4DDCC1AC1595965600F2CEC7 /* CoreData.framework */,
+				4DDCC1AD1595965600F2CEC7 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		4DDCC1AE1595965600F2CEC7 /* MKPopoverColorWellExample */ = {
+			isa = PBXGroup;
+			children = (
+				4DDCC1BA1595965600F2CEC7 /* AppDelegate.h */,
+				4DDCC1BB1595965600F2CEC7 /* AppDelegate.m */,
+				4DDCC1BD1595965600F2CEC7 /* MainMenu.xib */,
+				4DDCC1AF1595965600F2CEC7 /* Supporting Files */,
+			);
+			path = MKPopoverColorWellExample;
+			sourceTree = "<group>";
+		};
+		4DDCC1AF1595965600F2CEC7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4DDCC1B01595965600F2CEC7 /* MKPopoverColorWellExample-Info.plist */,
+				4DDCC1B11595965600F2CEC7 /* InfoPlist.strings */,
+				4DDCC1B41595965600F2CEC7 /* main.m */,
+				4DDCC1B61595965600F2CEC7 /* MKPopoverColorWellExample-Prefix.pch */,
+				4DDCC1B71595965600F2CEC7 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4DDCC1A31595965600F2CEC7 /* MKPopoverColorWellExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4DDCC1C01595965600F2CEC7 /* Build configuration list for PBXNativeTarget "MKPopoverColorWellExample" */;
+			buildPhases = (
+				4DDCC1A01595965600F2CEC7 /* Sources */,
+				4DDCC1A11595965600F2CEC7 /* Frameworks */,
+				4DDCC1A21595965600F2CEC7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MKPopoverColorWellExample;
+			productName = MKPopoverColorWellExample;
+			productReference = 4DDCC1A41595965600F2CEC7 /* MKPopoverColorWellExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4DDCC18D1595953800F2CEC7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 4DDCC1901595953800F2CEC7 /* Build configuration list for PBXProject "MKPopoverColorWell" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 4DDCC18B1595953800F2CEC7;
+			productRefGroup = 4DDCC1A51595965600F2CEC7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4DDCC1A31595965600F2CEC7 /* MKPopoverColorWellExample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4DDCC1A21595965600F2CEC7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DDCC1B31595965600F2CEC7 /* InfoPlist.strings in Resources */,
+				4DDCC1B91595965600F2CEC7 /* Credits.rtf in Resources */,
+				4DDCC1BF1595965600F2CEC7 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4DDCC1A01595965600F2CEC7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DDCC1C3159596B300F2CEC7 /* MKColorPickerView.m in Sources */,
+				4DDCC1C4159596B300F2CEC7 /* MKColorSwatchCell.m in Sources */,
+				4DDCC1C5159596B300F2CEC7 /* MKColorSwatchMatrix.m in Sources */,
+				4DDCC1C6159596B300F2CEC7 /* MKColorWell.m in Sources */,
+				4DDCC1B51595965600F2CEC7 /* main.m in Sources */,
+				4DDCC1BC1595965600F2CEC7 /* AppDelegate.m in Sources */,
+				4DDCC1C9159597C800F2CEC7 /* MKColorWell+Bindings.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4DDCC1B11595965600F2CEC7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4DDCC1B21595965600F2CEC7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		4DDCC1B71595965600F2CEC7 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4DDCC1B81595965600F2CEC7 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		4DDCC1BD1595965600F2CEC7 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4DDCC1BE1595965600F2CEC7 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4DDCC1921595953800F2CEC7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		4DDCC1931595953800F2CEC7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		4DDCC1C11595965600F2CEC7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MKPopoverColorWellExample/MKPopoverColorWellExample-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "MKPopoverColorWellExample/MKPopoverColorWellExample-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		4DDCC1C21595965600F2CEC7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MKPopoverColorWellExample/MKPopoverColorWellExample-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "MKPopoverColorWellExample/MKPopoverColorWellExample-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4DDCC1901595953800F2CEC7 /* Build configuration list for PBXProject "MKPopoverColorWell" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DDCC1921595953800F2CEC7 /* Debug */,
+				4DDCC1931595953800F2CEC7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4DDCC1C01595965600F2CEC7 /* Build configuration list for PBXNativeTarget "MKPopoverColorWellExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DDCC1C11595965600F2CEC7 /* Debug */,
+				4DDCC1C21595965600F2CEC7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4DDCC18D1595953800F2CEC7 /* Project object */;
+}
