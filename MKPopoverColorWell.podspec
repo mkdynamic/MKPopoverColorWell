@@ -10,5 +10,4 @@ Pod::Spec.new do |s|
   s.platform     = :osx
   s.source_files = '*.{h,m}'
   s.framework    = 'Cocoa'
-  s.requires_arc = true
 end
