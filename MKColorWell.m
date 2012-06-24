@@ -12,6 +12,9 @@
 
 @interface MKColorWell ()
 - (void)setupPopover;
+- (NSPopover *)createPopover;
+- (NSViewController *)createPopoverViewController;
+- (MKColorPickerView *)createPopoverView;
 - (NSArray *)colorsForPopover;
 @end
 
@@ -80,25 +83,42 @@
     return colors;
 }
 
-- (void)setupPopover
+- (NSPopover *)createPopover
 {
-    // create popover
-    popover = [[NSPopover alloc] init];
-    [popover setBehavior:NSPopoverBehaviorSemitransient];
-    [popover setAnimates:NO];
-    
-    // create view controller and set popover view
-    popoverViewController = [[NSViewController alloc] init];
-    popover.contentViewController = popoverViewController;
+    NSPopover *aPopover = [[NSPopover alloc] init];
+    [aPopover setBehavior:NSPopoverBehaviorSemitransient];
+    [aPopover setAnimates:NO];
+    return aPopover;
+}
+
+- (NSViewController *)createPopoverViewController
+{
+    NSViewController *aPopoverViewController = [[NSViewController alloc] init];
+    return aPopoverViewController;
+}
+
+- (MKColorPickerView *)createPopoverView
+{
     NSArray *colors = [self colorsForPopover];
     uint rows = 13;
     NSSize swatchSize = NSMakeSize(15, 15);
-    popoverView = [[MKColorPickerView alloc] initWithColors:colors
-                                               numberOfRows:rows
-                                            numberOfColumns:[colors count] / rows
-                                                 swatchSize:swatchSize
-                                            targetColorWell:self];
     
+    MKColorPickerView *aPopoverView;
+    aPopoverView = [[MKColorPickerView alloc] initWithColors:colors
+                                                numberOfRows:rows
+                                             numberOfColumns:[colors count] / rows
+                                                  swatchSize:swatchSize
+                                             targetColorWell:self];
+    return aPopoverView;
+}
+
+- (void)setupPopover
+{
+    popover = [self createPopover];
+    popoverViewController = [self createPopoverViewController];
+    popoverView = [self createPopoverView];
+    
+    popover.contentViewController = popoverViewController;
     popoverViewController.view = popoverView;
 }
 
