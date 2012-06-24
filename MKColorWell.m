@@ -12,21 +12,13 @@
 
 @interface MKColorWell ()
 - (void)setupPopover;
+- (NSArray *)colorsForPopover;
 @end
 
 @implementation MKColorWell
-// NOTE you can stick your own colors in here
-- (void)setupPopover
+// NOTE you can subclass and define your own colors here
+- (NSArray *)colorsForPopover
 {
-    // create popover
-    popover = [[NSPopover alloc] init];
-    [popover setBehavior:NSPopoverBehaviorSemitransient];
-    [popover setAnimates:NO];
-    
-    // create view controller and set popover view
-    popoverViewController = [[NSViewController alloc] init];
-    popover.contentViewController = popoverViewController;
-    
     // create popover view
     NSMutableArray *colors = [NSMutableArray array];
     NSColor *color;
@@ -85,9 +77,22 @@
         hue += 1.f / stepHue;
     }
     
-    popoverView = [[MKColorPickerView alloc] initWithColors:colors 
-                                               numberOfRows:stepHue + 1
-                                            numberOfColumns:stepGray + 2
+    return colors;
+}
+
+- (void)setupPopover
+{
+    // create popover
+    popover = [[NSPopover alloc] init];
+    [popover setBehavior:NSPopoverBehaviorSemitransient];
+    [popover setAnimates:NO];
+    
+    // create view controller and set popover view
+    popoverViewController = [[NSViewController alloc] init];
+    popover.contentViewController = popoverViewController;
+    popoverView = [[MKColorPickerView alloc] initWithColors:[self colorsForPopover] 
+                                               numberOfRows:13
+                                            numberOfColumns:9
                                                  swatchSize:NSMakeSize(15, 15)
                                             targetColorWell:self];
     
