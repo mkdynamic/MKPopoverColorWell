@@ -46,35 +46,6 @@
     return self;
 }
 
-- (void)drawRect:(NSRect)dirtyRect
-{
-    [super drawRect:dirtyRect];
-    
-//    if (highlightedCell) {
-//        NSInteger row;
-//        NSInteger column;
-//        [self getRow:&row column:&column ofCell:highlightedCell];
-//        NSRect outlineRect = NSInsetRect([self cellFrameAtRow:row column:column],
-//                                         -[self intercellSpacing].width + 0.5,
-//                                         -[self intercellSpacing].height + 0.5);
-//        
-//        outlineRect = [[self superview] convertRect:outlineRect fromView:self];
-//        
-//        [NSGraphicsContext saveGraphicsState];
-//        NSSetFocusRingStyle(NSFocusRingOnly);
-//        [[self superview] lockFocus];
-//        
-//        NSBezierPath *outline = [NSBezierPath bezierPathWithRect:outlineRect];
-//        [[NSColor whiteColor] setStroke];
-//        [outline setLineJoinStyle:NSMiterLineJoinStyle];
-//        [outline setLineWidth:[self intercellSpacing].width];
-//        [outline stroke];
-//        
-//        [[self superview] unlockFocus];
-//        [NSGraphicsContext restoreGraphicsState];
-//    }
-}
-
 - (NSCell *)makeCellAtRow:(NSInteger)row column:(NSInteger)column
 {
     MKColorSwatchCell *cell = (MKColorSwatchCell *)[super makeCellAtRow:row column:column];
