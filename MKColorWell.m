@@ -19,6 +19,8 @@
 @end
 
 @implementation MKColorWell
+@synthesize animatePopover = _animatePopover;
+
 // NOTE you can subclass and define your own colors here
 - (NSArray *)colorsForPopover
 {
@@ -87,8 +89,13 @@
 {
     NSPopover *aPopover = [[NSPopover alloc] init];
     [aPopover setBehavior:NSPopoverBehaviorSemitransient];
-    [aPopover setAnimates:NO];
+    [aPopover setAnimates:self.animatePopover];
     return aPopover;
+}
+
+- (void)setAnimatePopover:(BOOL)animatePopover {
+    _animatePopover = animatePopover;
+    self->popover.animates = animatePopover;
 }
 
 - (NSViewController *)createPopoverViewController
