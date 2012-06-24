@@ -14,5 +14,8 @@
     NSView *popoverView;
 }
 
+@property (nonatomic, assign) BOOL animatePopover;
+
 - (void)setColorAndClose:(NSColor *)aColor;
+
 @end

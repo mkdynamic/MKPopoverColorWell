@@ -40,7 +40,7 @@
 {
     MKColorSwatchCell *cell = (MKColorSwatchCell *)[super makeCellAtRow:row column:column];
 
-    int index = column + (row * colCount);
+    int index = (int)(column + (row * colCount));
     
     if (index < [colors count]) {
         cell.color = [colors objectAtIndex:index];
