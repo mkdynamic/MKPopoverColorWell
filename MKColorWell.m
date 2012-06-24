@@ -94,10 +94,15 @@
     popoverViewController.view = popoverView;
 }
 
+- (void)setColor:(NSColor *)aColor
+{
+    [super setColor:aColor];
+    [self propagateValue:aColor forBinding:@"value"];
+}
+
 - (void)setColorAndClose:(NSColor *)color
 {
-    [super setColor:color];
-    [self propagateValue:color forBinding:@"value"];
+    [self setColor:color];
     [popover performClose:self];
 }
 

@@ -50,6 +50,7 @@
 		return;
 	}
     
-	[boundObject setValue:value forKeyPath:boundKeyPath];
+    if ([[boundObject valueForKeyPath:boundKeyPath] isNotEqualTo:value])
+        [boundObject setValue:value forKeyPath:boundKeyPath];
 }
 @end
