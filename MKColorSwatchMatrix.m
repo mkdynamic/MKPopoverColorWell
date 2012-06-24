@@ -31,16 +31,6 @@
         
         [self setBackgroundColor:[NSColor darkGrayColor]];
         [self setDrawsBackground:YES];
-        
-        NSTrackingArea *trackingArea;
-        trackingArea = [[NSTrackingArea alloc] initWithRect:[self frame]
-                                                    options:(NSTrackingMouseMoved | 
-                                                             NSTrackingActiveInKeyWindow |
-                                                             NSTrackingMouseEnteredAndExited | 
-                                                             NSTrackingInVisibleRect)
-                                                      owner:self
-                                                   userInfo:nil];
-        [self addTrackingArea:trackingArea];
     }
     
     return self;
@@ -61,13 +51,6 @@
 
 - (void)mouseDown:(NSEvent *)theEvent
 {
-    if (highlightedCell) {
-        [targetColorWell setColorAndClose:[highlightedCell color]];
-    }
-}
-
-- (void)mouseMoved:(NSEvent *)theEvent
-{
     NSPoint pt = [self convertPoint:[theEvent locationInWindow] fromView:nil];
     
     NSInteger row;
@@ -75,16 +58,8 @@
     BOOL hit = [self getRow:&row column:&column forPoint:pt];
     
     if (hit) {
-        if (highlightedCell) [highlightedCell setHighlighted:NO];
-        highlightedCell = [self cellAtRow:row column:column];
-        [highlightedCell setHighlighted:YES];
+        MKColorSwatchCell *cell = [self cellAtRow:row column:column];
+        [targetColorWell setColorAndClose:[cell color]];
     }
-}
-
-- (void)mouseExited:(NSEvent *)theEvent
-{
-   highlightedCell = nil;
-   [self setNeedsDisplay:YES];
-    
 }
 @end

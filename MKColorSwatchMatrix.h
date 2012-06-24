@@ -12,7 +12,6 @@
 
 @interface MKColorSwatchMatrix : NSMatrix {
     NSArray *colors;
-    MKColorSwatchCell *highlightedCell;
     MKColorWell *targetColorWell;
     int colCount;
 }
