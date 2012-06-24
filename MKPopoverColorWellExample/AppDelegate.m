@@ -12,6 +12,8 @@
 @implementation AppDelegate
 
 @synthesize window = _window;
+@synthesize wellA = _wellA;
+@synthesize wellB = _wellB;
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {

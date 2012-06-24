@@ -11,5 +11,7 @@
 @interface AppDelegate : NSObject <NSApplicationDelegate>
 
 @property (assign) IBOutlet NSWindow *window;
+@property IBOutlet NSColorWell *wellA;
+@property IBOutlet NSColorWell *wellB;
 
 @end
