@@ -8,7 +8,7 @@
 
 #import "MKColorWell.h"
 #import "MKColorPickerView.h"
-#import "MKColorWell+Bindings.m"
+#import "MKColorWell+Bindings.h"
 
 @interface MKColorWell ()
 - (void)setupPopover;
@@ -90,10 +90,13 @@
     // create view controller and set popover view
     popoverViewController = [[NSViewController alloc] init];
     popover.contentViewController = popoverViewController;
-    popoverView = [[MKColorPickerView alloc] initWithColors:[self colorsForPopover] 
-                                               numberOfRows:13
-                                            numberOfColumns:9
-                                                 swatchSize:NSMakeSize(15, 15)
+    NSArray *colors = [self colorsForPopover];
+    uint rows = 13;
+    NSSize swatchSize = NSMakeSize(15, 15);
+    popoverView = [[MKColorPickerView alloc] initWithColors:colors
+                                               numberOfRows:rows
+                                            numberOfColumns:[colors count] / rows
+                                                 swatchSize:swatchSize
                                             targetColorWell:self];
     
     popoverViewController.view = popoverView;

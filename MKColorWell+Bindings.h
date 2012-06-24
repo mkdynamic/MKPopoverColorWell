@@ -8,4 +8,6 @@
 #import "MKColorWell.h"
 
 @interface MKColorWell (Bindings)
+-(void)propagateValue:(id)value
+           forBinding:(NSString*)binding;
 @end
