@@ -14,4 +14,6 @@
 @property IBOutlet NSColorWell *wellA;
 @property IBOutlet NSColorWell *wellB;
 
+- (IBAction)testAction:(id)sender;
+
 @end

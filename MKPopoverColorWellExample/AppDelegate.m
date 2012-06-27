@@ -20,4 +20,8 @@
     // Insert code here to initialize your application
 }
 
+- (void)testAction:(id)sender {
+    NSLog(@"Action worked!");
+}
+
 @end

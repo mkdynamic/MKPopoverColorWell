@@ -31,6 +31,9 @@
         
         [self setBackgroundColor:[NSColor darkGrayColor]];
         [self setDrawsBackground:YES];
+        // normally the Target/Action process is implemented through NSColorPanel
+        [self setAction:targetColorWell.action];
+        [self setTarget:targetColorWell.target];
     }
     
     return self;
@@ -60,6 +63,7 @@
     if (hit) {
         MKColorSwatchCell *cell = [self cellAtRow:row column:column];
         [targetColorWell setColorAndClose:[cell color]];
+        [self sendAction:self.action to:self.target];
     }
 }
 @end
