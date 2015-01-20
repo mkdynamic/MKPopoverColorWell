@@ -49,8 +49,9 @@
 		NSLog(@"ERROR: NSObservedKeyPathKey was nil for binding \"%@\" in %s", binding, __PRETTY_FUNCTION__);
 		return;
 	}
-    
-    if ([[boundObject valueForKeyPath:boundKeyPath] isNotEqualTo:value])
+
+    id boundValue = [boundObject valueForKeyPath:boundKeyPath];
+    if ([boundValue isNotEqualTo:value] || (nil == boundValue && value))
         [boundObject setValue:value forKeyPath:boundKeyPath];
 }
 @end
